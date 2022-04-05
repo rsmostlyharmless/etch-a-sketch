@@ -26,14 +26,14 @@ populateBoard(16);
 //allows a max and min amount of squares on the grid
 
 function changeSize(input) {
-    if(input >= 10 || input <= 500) {
+    if(input >= 1 && input <= 100) {
         populateBoard(input);
     } else {
-        console.log("wrong selection");
+        false; //prevents possible crash event
     }
 }
 
-//creates a random colour selction for the user
+//creates a random colour selection for the user
 
 function colourSquare() {
     if (click) {

@@ -1,7 +1,7 @@
 //set up the mouse to change the colour of the squares
 
 let colour = "black";
-let click = true;
+let click = false;
 
 //creates a veriety of squares dependant on amount entered and assignes them to rows and columns on the grid
 
@@ -57,3 +57,8 @@ function resetBoard() {
     squares.forEach((div) => (div.style.backgroundColor = "white"));
 }
 
+//adds a click element to the board so the user can't start colouring until they want to
+
+document.querySelector(".board").addEventListener("click", () => {
+    click = !click;
+});

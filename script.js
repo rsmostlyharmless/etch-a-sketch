@@ -37,7 +37,7 @@ function changeSize(input) {
 
 function colourSquare() {
     if (click) {
-        if (colour === "random") {
+        if (colour === "multiple") {
             this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
         } else {
             this.style.backgroundColor = colour;
@@ -48,3 +48,4 @@ function colourSquare() {
 function changeColour(choice) {
     colour = choice;
 }
+

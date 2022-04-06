@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&family=Rubik+Puddles&display=swap');
+
 body {
     background-image: url(../etch-a-sketch/img/me\ copy.jpg);
     background-repeat: no-repeat;
@@ -5,13 +7,33 @@ body {
 }
 
 h1 {
+    font-family: 'Rubik Microbe', cursive;
     text-align: center;
     text-decoration: underline overline;
-    font-size: 50px;
+    font-size: 5em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .board {
+    border: 1px solid turquoise;
+    box-shadow: 0 0 30px turquoise;
     width: 500px;
     height: 500px;
     display: grid;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+button {
+    margin-left: 15px;
+    margin-right: 15px;
 }

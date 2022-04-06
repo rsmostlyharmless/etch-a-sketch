@@ -16,7 +16,7 @@ let amount = size * size;
 for (let i = 0; i < amount; i++) {
     let square = document.createElement("div");
     square.addEventListener("mouseover", colourSquare);
-    square.style.backgroundColor = "white";             //color of squares before being turned to black or colour
+    square.style.backgroundColor = "transparent";             //color of squares before being turned to black or colour
     board_div.insertAdjacentElement("beforeend", square);
     }
 }
@@ -54,7 +54,7 @@ function changeColour(choice) {
 function resetBoard() {
     let board = document.querySelector(".board");
     let squares = board.querySelectorAll("div");
-    squares.forEach((div) => (div.style.backgroundColor = "white"));
+    squares.forEach((div) => (div.style.backgroundColor = "transparent"));
 }
 
 //adds a click element to the board so the user can't start colouring until they want to

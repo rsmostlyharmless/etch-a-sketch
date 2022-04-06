@@ -1,7 +1,7 @@
-//set up the mouse to change the colour of the squares
+//default colour and click setting
 
 let colour = "black";
-let click = false;
+let click = false; //if set to true the function will not work when page loads only after first click.
 
 //creates a veriety of squares dependant on amount entered and assignes them to rows and columns on the grid
 

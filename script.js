@@ -21,7 +21,7 @@ for (let i = 0; i < amount; i++) {
     }
 }
 
-populateBoard(16);
+populateBoard();
 
 //allows a max and min amount of squares on the grid
 
@@ -57,7 +57,7 @@ function resetBoard() {
     squares.forEach((div) => (div.style.backgroundColor = "transparent"));
 }
 
-//adds a click element to the board so the user can't start colouring until they want to
+//adds a click element to the board so the user can't start colouring until they click on the board
 
 document.querySelector(".board").addEventListener("click", () => {
     click = !click;

@@ -11,18 +11,19 @@
 <body>
 
     <div class="container">
-        <div class="title"><h1>Etch~A~Sketch</h1></div>
+        <h1>Etch~A~Sketch</h1>
+        <p>Select a grid size and colour then click on the board to start and finish colouring</p>
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
-                <button onclick="changeColour('black')">Black</button>
-                <button onclick="changeColour('multiple')">Random</button>
-                <button onclick="changeColour('transparent')">Eraser</button>
-                <button onclick="resetBoard()">Reset</button>
+                <button class="btn1" onclick="changeColour('black')">Black</button>
+                <button class="btn2" onclick="changeColour('multiple')">Random</button>
+                <button class="btn3" onclick="changeColour('transparent')">Eraser</button>
+                <button class="btn4" onclick="resetBoard()">Reset</button>
             </div>
             <div>
-                <input type="text" placeholder="Type board size e.g 32" value="" onchange="changeSize(this.value)" />
-                <button>Set size</button>
+                <input type="text" placeholder="Type grid size: 1 - 100" size="17" value="" onchange="changeSize(this.value)" />
+                <button class="btn5">Set size</button>
             </div>
         </div>
     </div>
